@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="helpers.css"/>
+    <title>Trivia</title>
+  </head>
+  <body>
+    <h1>TRIVIA</h1>
+    <h2 id="score"></h2>
+    <div class="container">
+      <label for="amount">Numero de preguntas</label>
+      <input type="text" id="amount" value="0" />
+
+      <label for="category">Categoria</label>
+      <select name="" id="category">
+        <option value="0">Cualquier categoría</option>
+        <option value="9">Cultura general</option>
+        <option value="10">Libros</option>
+        <option value="11">Películas</option>
+        <option value="12">Música</option>
+        <option value="13">Musicales y teatros</option>
+        <option value="14">Televisión</option>
+        <option value="15">Videojuegos</option>
+        <option value="16">Juegos de mesa</option>
+        <option value="17">Ciencia y naturaleza</option>
+        <option value="18">Computación</option>
+        <option value="19">Matemáticas</option>
+        <option value="20">Mitología</option>
+        <option value="21">Deportes</option>
+        <option value="22">Geografía</option>
+        <option value="23">Historia</option>
+        <option value="24">Política</option>
+        <option value="25">Arte</option>
+        <option value="26">Celebridades</option>
+        <option value="27">Animales</option>
+        <option value="28">Autos</option>
+        <option value="29">Comics</option>
+        <option value="30">Gadgets</option>
+        <option value="31">Ánime y manga</option>
+        <option value="32">Caricaturas</option>
+      </select>
+
+      <label for="difficulty">Dificultad</label>
+      <select name="" id="difficulty">
+        <option value="0">Cualquier Dificultad</option>
+        <option value="easy">Facíl</option>
+        <option value="medium">Intermedio</option>
+        <option value="hard">Dificil</option>
+      </select>
+
+      <label for="type">Tipo de pregunta</label>
+      <select name="" id="type">
+        <option value="0">Cualquier Tipo</option>
+        <option value="multiple">Opción Multiple</option>
+        <option value="boolean">Verdadero / Falso</option>
+      </select>
+
+      <input
+        type="button"
+        value="Empezar"
+        id="submit"
+        onclick="createApiUrl()"
+      />
+    </div>
+    <div id="question"></div>
+
+    <!-- <button class="btn-nextQ">Sigueinte pregunta</button> -->
+
+    <script src="./mainTrivia.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+*{
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+    font-family: 'Rampart One', cursive;
+    
+}
+
+body {
+    background-color: purple;
+}
+
+h1 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+
+#score {
+    margin-left: 80%;
+    color: white;
+}
+
+.container {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 30%;
+    flex-direction: column;
+    margin: auto;
+    align-items: center; 
+    background-color: white; 
+}
+
+#question {
+    margin-top: 3rem;
+}
+
+#question ul {
+    margin: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn-nextQ {
+    padding: 1rem;
+    border: 3px solid black;
+}

@@ -1,0 +1,17 @@
+label {
+    margin-top: 2rem;
+}
+
+#submit {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+input {
+    border-radius: 8px;
+}
+
+select {
+    border-radius: 8px;
+}
+
